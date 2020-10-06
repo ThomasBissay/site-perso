@@ -5,13 +5,13 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function Home() {
     return (
-        <div className="row bg justify-content-center">
+        <div className="row bg justify-content-center text-center">
             {/* Main panel centered */}
-            <div className="col-xl-3 col-lg-5 col-md-6 col-sm-8 col-xs-12 text-center align-self-center">
+            <div className="col-xl-4 col-lg-5 col-md-8 col-sm-10 col-xs-12 align-self-center">
 
                 {/* Welcome text */}
                 <div className="welcome">
-                    <img className="profil-img border rounded-circle" src={require("../images/profil-round.png")} alt=""/>
+                    <img className="profil-img border rounded-circle" src="https://i.ibb.co/f2D9PdP/profil-round.png" alt=""/>
                     <h2 className="simple-title">Welcome !</h2>
                     <p className="simple-text">I'm Thomas Bissay, a French developer and amateur photographer.
                         I mainly do street and landscape photography, since the end of 2019.

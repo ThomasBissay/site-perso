@@ -46,7 +46,6 @@ html, body {
 .bg {
     background-color: #000000;
     flex: 1;
-    min-height: 500px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,6 +95,7 @@ html, body {
 
 /* Home styles */
 .welcome {
+    margin: 5%;
     padding: 30px 10px 35px;
     background-color: #111111;
     border-radius: 10px;
