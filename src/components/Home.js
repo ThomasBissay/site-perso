@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="row bg justify-content-center">
             {/* Main panel centered */}
-            <div className="col-md-3 col-sm-6 col-xs-12 text-center align-self-center">
+            <div className="col-xl-3 col-lg-5 col-md-6 col-sm-8 col-xs-12 text-center align-self-center">
 
                 {/* Welcome text */}
                 <div className="welcome">
