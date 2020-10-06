@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    height: 100%;
+}
+
+/* NavBar custom items */
+.navbarDark {
+    background-color: #000000;
+    flex: 1;
+}
+
+.linkNav {
+    font-size: 13px;
+    margin-left: 2vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Open Sans", serif;
+    color: #ffffff;
+}
+
+.socialNav {
+    font-size: 13px;
+    margin-left: 2vh;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.linkNav:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+    color: #bf0101;
+}
+
+.underline {
+    border-bottom: 5px solid #bf0101;
+}
+
+/* Common styles */
+.flexContainer {
+    display: flex;
+    height: 100vh;
+}
+
+.bg {
+    background-color: #000000;
+    flex: 1;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('https://i.ibb.co/YRt3VDF/DSC0654-1.jpg');
+}
+
+.simple-title {
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 30px 0 40px;
+    padding: 0 0 11px;
+    position: relative;
+    color: #ffffff;
+}
+
+.simple-text {
+    color: #9e9b9b;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 15px 35px;
+    text-align: justify-all;
+}
+
+.simpleBtn {
+    border-radius: 20px;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 12px 20px;
+    margin: 0 2px;
+}
+
+.socialBtn {
+    border-radius: 30px;
+    padding: 10px 15px;
+    border-width: 0;
+    margin: 0 4px;
+}
+
+/* Home styles */
+.welcome {
+    padding: 30px 10px 35px;
+    background-color: #111111;
+    border-radius: 10px;
+    opacity: 98%;
+}
+
+.profil-img {
+    height: 30%;
+    width: 30%;
+}
+
+.btnContainer {
+    margin: 60px 5px 0;
+}
+
+/* Contact styles */
+.bgClean {
+    flex: 1;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.contact {
+    padding: 0 10px 35px;
+    color: #525050;
+}
+
+.contactBtn {
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 22px;
+    padding: 10px 30px;
+    border-width: 0;
+}
+
+/* Bio styles */
+.bio {
+    margin: 10% 5% 5% 5%;
+}
+
+.bio-title {
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin: 0 0 8%;
+    color: #3e3e3e;
+    text-align: left;
+}
+
+.bio-subtitle {
+    color: #878787;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 0 0 11%;
+    text-align: left;
+}
+
+.bio-text {
+    color: #9e9b9b;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 0 35px;
+    text-align: left;
+}
+
+.bio-img {
+    margin: 6% 0 5% 0;
+    width: 100%;
+}
