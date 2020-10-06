@@ -46,7 +46,7 @@ const HeaderWithRouter = withRouter(Header);
 export default function App() {
   return (
         <div className="container-fluid d-flex flex-column" style={{height: "100vh"}}>
-          <Router>
+          <Router basename="/">
               <HeaderWithRouter/>
               <Switch>
                   <Route exact path="/">
