@@ -53,6 +53,14 @@ html, body {
     background-image: url('https://i.ibb.co/YRt3VDF/DSC0654-1.jpg');
 }
 
+.bgClean {
+    flex: 1;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .simple-title {
     font-size: 40px;
     letter-spacing: 0;
@@ -104,17 +112,6 @@ html, body {
 }
 
 /* Contact styles */
-.bgClean {
-    flex: 1;
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
 .contact {
     padding: 0 10px 35px;
     color: #525050;

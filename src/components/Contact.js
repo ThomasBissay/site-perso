@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React from 'react';
 import emailjs from 'emailjs-com';
 
 import '../css/custom.css';
@@ -29,7 +29,7 @@ function Contact() {
 
     return (
         <div className="bgClean bg-dark row justify-content-center text-center">
-            <div className="col-md-3 col-sm-6 col-xs-12 align-self-center">
+            <div className="col-xl-3 col-lg-5 col-md-6 col-sm-8 col-xs-12 align-self-center bg-dark">
                 <div className="contact">
                     <h1 className="mb-5 simple-title">Contact</h1>
                     <h5 className="mb-2 simple-text">Don't hesitate to send me a message for any request or question concerning my photos, my equipment

@@ -21,7 +21,7 @@ const Header = props => {
     return (
         <div className="row">
             <Navbar className="navbarDark navbar-dark header text-center" expand="lg">
-                <Navbar.Brand href="/home">
+                <Navbar.Brand href="/">
                     <img src={require('./images/LogoTB.png')} width="140" height="45" alt=""/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav"/>
@@ -49,13 +49,13 @@ export default function App() {
           <Router basename="/">
               <HeaderWithRouter/>
               <Switch>
-                  <Route exact path="/">
-                      <Redirect to="/home" />
+                  <Route exact path="/" component={Home}>
+                      <Redirect to="/home"/>
                   </Route>
-                  <Route path='/home' exact component={Home} />
-                  <Route path='/portfolio' component={Portfolio} />
-                  <Route path='/aboutme' component={AboutMe} />
-                  <Route path='/contact' component={Contact} />
+                  <Route exact path='/home' component={Home} />
+                  <Route exact path='/portfolio' component={Portfolio} />
+                  <Route exact path='/aboutme' component={AboutMe} />
+                  <Route exact path='/contact' component={Contact} />
               </Switch>
           </Router>
         </div>
