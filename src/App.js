@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState} from 'react';
 import './css/custom.css';
 import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
