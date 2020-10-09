@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './css/custom.css';
+import './css/custom.scss';
 import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Nav} from "react-bootstrap";

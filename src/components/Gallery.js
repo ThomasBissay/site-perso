@@ -32,10 +32,10 @@ function Gallery (props) {
     },[country])
 
     return (
-        <div className="row">
+        <div className="card-columns">
             {data.map((item, id) => (
-                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                    <img className="galleryImg img-fluid" onClick={() => openImageViewer(id)} key={id} src={item} alt=""/>
+                <div className="card border-0">
+                    <img className="card-img-top" onClick={() => openImageViewer(id)} key={id} src={item} alt=""/>
                 </div>
             ))}
 

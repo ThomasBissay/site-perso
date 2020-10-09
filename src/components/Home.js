@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import '../css/custom.css';
+import '../css/custom.scss';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 function Home() {

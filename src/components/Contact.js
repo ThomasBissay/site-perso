@@ -1,7 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 
-import '../css/custom.css';
+import '../css/custom.scss';
 
 function Contact() {
 
