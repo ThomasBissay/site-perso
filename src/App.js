@@ -22,7 +22,7 @@ const Header = props => {
     return (
         <div className="row">
             <Navbar className="navbarDark navbar-dark header text-center" expanded={expanded} expand="lg">
-                <Navbar.Brand href="/">
+                <Navbar.Brand href="/home">
                     <img src={require('./images/LogoTB.png')} width="140" height="45" alt=""/>
                 </Navbar.Brand>
                 <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")}/>
