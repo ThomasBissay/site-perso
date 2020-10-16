@@ -11,7 +11,7 @@ function Home() {
 
                 {/* Welcome text */}
                 <div className="welcome">
-                    <img className="profil-img border rounded-circle" src="https://i.ibb.co/f2D9PdP/profil-round.png" alt=""/>
+                    <img className="profil-img border rounded-circle" src="https://i.ibb.co/XFZKgX0/profil-round-1.jpg" alt=""/>
                     <h2 className="simple-title">Welcome !</h2>
                     <p className="simple-text">I'm Thomas Bissay, a French developer and amateur photographer.
                         I mainly do street and landscape photography, since the end of 2019.
