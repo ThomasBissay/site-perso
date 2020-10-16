@@ -34,6 +34,12 @@ html, body {
     color: #bf0101;
 }
 
+.socialNav:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+    color: #bf0101;
+}
+
 .underline {
     border-bottom: 5px solid #bf0101;
 }
@@ -50,7 +56,7 @@ html, body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('https://i.ibb.co/3BFX3SC/DSC0654-1-1-2.jpg');
+    background-image: url('https://i.ibb.co/yNvpjBD/DSC0433.jpg');
 }
 
 .bgClean {
@@ -75,7 +81,7 @@ html, body {
     color: #9e9b9b;
     font-size: 15px;
     line-height: 22px;
-    margin: 0 15px 35px;
+    margin: 0 5% 8%;
     text-align: justify-all;
 }
 
@@ -96,11 +102,10 @@ html, body {
 
 /* Home styles */
 .welcome {
-    margin: 5%;
-    padding: 30px 10px 35px;
+    margin: 1% 0;
+    padding: 5% 3%;
     background-color: #111111;
     border-radius: 10px;
-    opacity: 0.98;
 }
 
 .profil-img {
