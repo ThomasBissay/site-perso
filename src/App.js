@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Redirect, Switch, NavLink} from "react-
 import Home from "./components/Home.js"
 import AboutMe from "./components/AboutMe.js"
 import Contact from "./components/Contact.js"
+import Blog from "./components/Blog"
 import Portfolio from "./components/Portfolio.js"
 import { withRouter } from "react-router";
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -29,6 +30,7 @@ const Header = props => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto mr-3" defaultActiveKey="/home" activeKey={location.pathname} >
                         <NavLink className="linkNav" activeClassName="underline" to="/home" onClick={() => setExpanded(false)}>Home</NavLink>
+                        <NavLink className="linkNav" activeClassName="underline" to="/blog" onClick={() => setExpanded(false)}>Blog</NavLink>
                         <NavLink className="linkNav" activeClassName="underline" to="/portfolio" onClick={() => setExpanded(false)}>Portfolio</NavLink>
                         <NavLink className="linkNav" activeClassName="underline" to="/aboutme" onClick={() => setExpanded(false)}>Bio</NavLink>
                         <NavLink className="linkNav" activeClassName="underline" to="/contact" onClick={() => setExpanded(false)}>Contact</NavLink>
@@ -57,6 +59,7 @@ export default function App() {
                         <Redirect to="/home"/>
                     </Route>
                     <Route exact path='/home' component={Home} />
+                    <Route exact path='/blog' component={Blog} />
                     <Route exact path='/portfolio' component={Portfolio} />
                     <Route exact path='/aboutme' component={AboutMe} />
                     <Route exact path='/contact' component={Contact} />
