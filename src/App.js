@@ -8,6 +8,7 @@ import Home from "./components/Home.js"
 import AboutMe from "./components/AboutMe.js"
 import Contact from "./components/Contact.js"
 import Blog from "./components/Blog"
+import BlogArticle from "./components/BlogArticle";
 import Portfolio from "./components/Portfolio.js"
 import { withRouter } from "react-router";
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -60,6 +61,7 @@ export default function App() {
                     </Route>
                     <Route exact path='/home' component={Home} />
                     <Route exact path='/blog' component={Blog} />
+                    <Route exact path='/blog/:id' component={BlogArticle} />
                     <Route exact path='/portfolio' component={Portfolio} />
                     <Route exact path='/aboutme' component={AboutMe} />
                     <Route exact path='/contact' component={Contact} />
