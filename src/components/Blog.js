@@ -6,6 +6,7 @@ function Blog () {
     const [data, setData] = useState([]);
 
     useEffect( () => {
+        console.log("TEST")
         firebase.storage().ref().child('Articles/').list().then(result => {
             // Loop over each item
             result.items.forEach(articles => {
@@ -13,6 +14,7 @@ function Blog () {
                     fetch(url)
                         .then(response => response.json())
                         .then(content => {
+                            console.log(content)
                             setData(data => [...data, content]);
                         })
                         .catch(error => console.error(error));
@@ -43,7 +45,7 @@ function Blog () {
     }
 
     const Articles = () => {
-        if (data.length) {
+        if (data) {
             return (
                 data.map((item, id) => (
                     <div key={id} className="border-bottom mt-3 mb-3 col-xl-7 col-lg-7 col-md-8 col-sm-10 col-xs-12">
