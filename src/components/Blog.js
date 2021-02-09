@@ -6,7 +6,6 @@ function Blog () {
     const [data, setData] = useState([]);
 
     useEffect( () => {
-        console.log("TEST")
         firebase.storage().ref().child('Articles/').list().then(result => {
             // Loop over each item
             result.items.forEach(articles => {
@@ -14,7 +13,6 @@ function Blog () {
                     fetch(url)
                         .then(response => response.json())
                         .then(content => {
-                            console.log(content)
                             setData(data => [...data, content]);
                         })
                         .catch(error => console.error(error));
