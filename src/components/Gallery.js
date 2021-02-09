@@ -24,7 +24,6 @@ function Gallery (props) {
             // Loop over each item
             result.items.forEach(pics => {
                 firebase.storage().ref().child(pics.fullPath).getDownloadURL().then((url) => {
-                    console.log(url);
                     setData(data => [...data, url]);
                 })
             });
