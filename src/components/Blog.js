@@ -26,6 +26,7 @@ function Blog () {
             if (item.url)
                 return (<img src={item.url}
                              className="mt-3 mb-3 img-fluid bio-img col-xl-8 col-lg-9 col-md-10 col-sm-11 col-xs-12"
+                             alt=""
                         />)
             else {
                 firebase.storage().ref().child(item.img[0]).getDownloadURL().then((url) => {
@@ -34,6 +35,7 @@ function Blog () {
                     setData(newData);
                     return (<img src={url}
                                  className="mt-3 mb-3 img-fluid bio-img col-xl-8 col-lg-9 col-md-10 col-sm-11 col-xs-12"
+                                 alt=""
                     />)
                 })
             }

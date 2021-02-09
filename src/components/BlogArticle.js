@@ -47,7 +47,7 @@ function BlogArticle() {
                 data.text.map((item, id) => (
                     <div>
                         {images[id] ?  <img src={images[id]} className="img-fluid bio-img" alt=""/> : ''}
-                        <p key={id} className="text-dark text-justify mt-4 mb-4">{item}</p>
+                        <p key={id} className="text-justify mt-4 mb-4 bio-text">{item}</p>
                     </div>
                 )
             ))
