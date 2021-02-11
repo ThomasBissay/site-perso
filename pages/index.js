@@ -2,7 +2,6 @@ import Head from 'next/head'
 import React from "react";
 import Link from 'next/link'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import NavBar from "../component/NavBar";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
