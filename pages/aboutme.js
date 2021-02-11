@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import ImageViewer from "react-simple-image-viewer";
 
-function AboutMe() {
+function Aboutme() {
 
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
@@ -56,7 +55,7 @@ function AboutMe() {
                 </div>
             </div>
 
-            {/* Image viewer */}
+            {/* Image viewer
             {isViewerOpen && (
                 <ImageViewer
                     src={images}
@@ -66,10 +65,10 @@ function AboutMe() {
                         backgroundColor: "rgba(0,0,0,1)"
                     }}
                 />
-            )}
+            )} */}
 
         </div>
     );
 }
 
-export default AboutMe;
+export default Aboutme;

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import firebase from "../firebase/firebaseConf";
-import {Link} from "react-router-dom";
+import Link from "next/link";
 
 function Blog () {
     const [data, setData] = useState([]);
@@ -47,13 +47,16 @@ function Blog () {
             return (
                 data.map((item, id) => (
                     <div key={id} className="border-bottom mt-3 mb-3 col-xl-7 col-lg-7 col-md-8 col-sm-10 col-xs-12">
-                        <Link to={"/blog/" + id} style={{textDecoration: 'none'}}>
-                            {handleImg(item, id)}
-                            <h2 className="text-dark">{item.title}</h2>
-                            <div className="d-inline-flex">
-                                <h6 className="text-dark">by {item.author}&nbsp;</h6>
-                                <h6 className="text-dark mb-4">/ {item.createdAt}</h6>
-                            </div>
+                        <Link href={{pathname:"/article/",
+                        query: {id: id}}}>
+                            <a style={{textDecoration: 'none'}}>
+                                {handleImg(item, id)}
+                                <h2 className="text-dark">{item.title}</h2>
+                                <div className="d-inline-flex">
+                                    <h6 className="text-dark">by {item.author}&nbsp;</h6>
+                                    <h6 className="text-dark mb-4">/ {item.createdAt}</h6>
+                                </div>
+                            </a>
                         </Link>
                     </div>
                 ))

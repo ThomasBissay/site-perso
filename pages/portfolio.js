@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Dropdown} from "react-bootstrap";
-import Gallery from "./Gallery";
+import Gallery from "../component/Gallery";
 
 const galleryTitle = (country, type) => {
     let title = "Gallery";

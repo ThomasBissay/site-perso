@@ -1,6 +1,5 @@
 import React, {useCallback, useEffect, useState} from "react";
 import firebase from "../firebase/firebaseConf";
-import ImageViewer from "react-simple-image-viewer";
 
 function Gallery (props) {
     const country = props.country;
@@ -38,7 +37,7 @@ function Gallery (props) {
                 </div>
             ))}
 
-            {/* Image viewer */}
+            {/* Image viewer
             {isViewerOpen && (
                 <ImageViewer
                     src={data}
@@ -48,7 +47,7 @@ function Gallery (props) {
                         backgroundColor: "rgba(0,0,0,1)"
                     }}
                 />
-            )}
+            )}*/}
         </div>
     );
 }

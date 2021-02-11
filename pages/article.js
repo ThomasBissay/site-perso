@@ -1,17 +1,16 @@
 import React, {useEffect, useState} from "react";
 import firebase from "../firebase/firebaseConf";
-import {useLocation} from "react-router-dom";
+import {useRouter} from "next/router";
 
-function BlogArticle() {
+function Article() {
 
     const [data, setData] = useState([]);
     const [images, setImages] = useState([]);
-    const location = useLocation();
+    const location = useRouter();
 
     useEffect(() => {
         if (location) {
-            let str = location.pathname.lastIndexOf('/');
-            let id = location.pathname.substring(str + 1);
+            let id = location.query.id;
             firebase.storage().ref().child('Articles/').list().then(result => {
                 if (result.items[id]) {
                     firebase.storage().ref().child(result.items[id].fullPath).getDownloadURL().then((url) => {
@@ -45,9 +44,9 @@ function BlogArticle() {
         if (data.text) {
             return (
                 data.text.map((item, id) => (
-                    <div>
+                    <div key={id}>
                         {images[id] ?  <img src={images[id]} className="img-fluid bio-img" alt=""/> : ''}
-                        <p key={id} className="text-justify mt-4 mb-4 bio-text">{item}</p>
+                        <p className="text-justify mt-4 mb-4 bio-text">{item}</p>
                     </div>
                 )
             ))
@@ -85,4 +84,4 @@ function BlogArticle() {
     );
 }
 
-export default BlogArticle;
+export default Article;
