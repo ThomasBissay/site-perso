@@ -11,7 +11,7 @@ function Contact() {
             "subject": document.getElementById('objectMail').value,
             "message": document.getElementById('messageMail').value
         }
-        emailjs.send('service_rka35tb', 'template_88gupsl', template_params, "user_UQsC4sQ8SqtaEyXnnf4Iv")
+        emailjs.send('service_w5ujgp4', 'template_88gupsl', template_params, "user_UQsC4sQ8SqtaEyXnnf4Iv")
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
