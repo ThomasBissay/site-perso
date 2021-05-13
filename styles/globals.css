@@ -206,11 +206,12 @@ html, body {
 }
 
 .bio-text {
-  color: #7b7a7a;
-  font-size: 15px;
+  color: #6c6c6c;
+  font-size: 16px;
   line-height: 22px;
   margin: 35px 0 0;
   text-align: left;
+  white-space: pre-wrap;
 }
 
 .bio-img {

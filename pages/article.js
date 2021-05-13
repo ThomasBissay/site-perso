@@ -5,7 +5,7 @@ import {useRouter} from "next/router";
 function Article() {
 
     const [data, setData] = useState([]);
-    const [images, setImages] = useState([]);
+    const [images, setImages] = useState({});
     const location = useRouter();
 
     useEffect(() => {
@@ -29,10 +29,11 @@ function Article() {
     useEffect(() => {
         if (data) {
             if (data.img) {
-                data.img.map((item) => {
+                data.img.map((item, id) => {
                     if (item !== "") {
                         firebase.storage().ref().child(item).getDownloadURL().then((url) => {
-                            setImages(images => [...images, url]);
+                            setImages(images => ({...images, [id]: url}));
+                            console.log(images);
                         })
                     }
                 })

@@ -47,8 +47,7 @@ function Blog () {
             return (
                 data.map((item, id) => (
                     <div key={id} className="border-bottom mt-3 mb-3 col-xl-7 col-lg-7 col-md-8 col-sm-10 col-xs-12">
-                        <Link href={{pathname:"/article/",
-                        query: {id: id}}}>
+                        <Link href={{pathname:"/article/", query: {id: id}}}>
                             <a style={{textDecoration: 'none'}}>
                                 {handleImg(item, id)}
                                 <h2 className="text-dark">{item.title}</h2>
